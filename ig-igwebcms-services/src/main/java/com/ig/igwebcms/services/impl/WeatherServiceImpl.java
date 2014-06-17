@@ -29,6 +29,7 @@ import java.io.IOException;
 })
 public class WeatherServiceImpl implements WeatherService {
 
+
     /**
      * This method is to fetch the weather details for the city
      * @param city is the city name

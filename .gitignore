@@ -50,3 +50,9 @@ ig-webcms-ui/build/*
 .idea/
 
 mvn.log
+
+*LocaleWisePublish.java
+*DateWiseArticles.java
+*UtilityFunctions.java
+
+
