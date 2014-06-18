@@ -11,7 +11,7 @@
     function cookieCreation(latitude,longitude)
     {
                 var coordinates=latitude + "%" + longitude;
-                $.cookie('locationcoordinates',coordinates);
+                $.cookie('locationcoordinates',coordinates, { expires: 365 });
                 var cookie = $.cookie('locationcoordinates');
                 var coordinate = cookie.split("%");
                 return coordinate; 
