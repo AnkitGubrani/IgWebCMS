@@ -10,4 +10,7 @@
 	<filter root="/etc/designs/ig-igwebcms">
         <exclude pattern="/etc/designs/ig-igwebcms/jcr:content.*"/>
     </filter>
+    <filter root="/apps/wcm" />
+    <filter root="/apps/youtube" />
+    <filter root="/apps/foundation" />
 </workspaceFilter>

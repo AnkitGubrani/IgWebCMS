@@ -5,7 +5,7 @@
     jcr:primaryType="cq:Template"
     jcr:title="Youtube Configuration"
     sling:resourceSuperType="cq/cloudserviceconfigs/templates/configpage"
-    allowedPaths="[/etc/cloudservices/Youtube(/.*)?]"
+    allowedPaths="[/etc/cloudservices(/.*)?]"
     ranking="{Long}90">
     <jcr:content
         jcr:primaryType="cq:PageContent"

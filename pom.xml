@@ -135,11 +135,11 @@
                 <version>5.12.2</version>
                 <scope>provided</scope>
             </dependency>
-            <dependency>
+            <!--<dependency>
                 <groupId>com.day.commons.osgi.wrapper</groupId>
                 <artifactId>com.day.commons.osgi.wrapper.commons-httpclient</artifactId>
                 <version>3.1.0.018</version>
-            </dependency>
+            </dependency>-->
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.commons.scheduler</artifactId>
@@ -250,7 +250,7 @@
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>2.4.1</version>
                 </plugin>
-                <plugin>
+                <!--<plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>2.3.2</version>
@@ -260,7 +260,7 @@
                         <source>1.6</source>
                         <target>1.6</target>
                     </configuration>
-                </plugin>
+                </plugin>-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>

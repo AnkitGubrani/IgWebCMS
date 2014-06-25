@@ -86,14 +86,29 @@ public class AssetViewHandler
         if(pageJcrContent.hasProperty("cq:cloudserviceconfigs"))
         {
             Property props= pageJcrContent.getProperty("cq:cloudserviceconfigs");
-            Value[] values=props.getValues();
-            for(Value val:values)
+            LOGGER.info("isMultiple ::: "+props.isMultiple());
+            if(props.isMultiple())
             {
-                if(val.getString().contains("/Youtube/"))
+                LOGGER.info("Inside IF");
+                Value values[]=props.getValues();
+                LOGGER.info("values ::: "+values.length);
+                for(Value val:values)
                 {
-                    cloudService=val.getString();
-                }
+                    if(val.getString().contains("/Youtube_Connect/"))
+                    {
+                        cloudService=val.getString();
+                    }
 
+                }
+            }
+            else
+            {   LOGGER.info("Inside Else ::::: ");
+                String cloudser=props.getValue().getString();
+
+                if(cloudser.contains("/Youtube_Connect/"))
+                {
+                    cloudService=cloudser;
+                }
             }
             LOGGER.info("cloudService ::: "+cloudService);
     /*
