@@ -52,7 +52,7 @@
                                     xtype="button">
                                     <listeners
                                         jcr:primaryType="nt:unstructured"
-                                        click="function(comp, evt , record, path) {&#xa;    var str=document.URL;&#xa;    var test=str.replace(&quot;http://localhost:4502&quot;,&quot;&quot;);&#xa;    var a=test.split(&quot;.&quot;);&#xa;    var path=a[0]+&quot;/jcr:content&quot;;&#xa;    var dialog = comp.findParentByType('dialog'); &#xa;    var feedurl = dialog.findById(&quot;Url&quot;);&#xa;&#x9;var source = dialog.findById(&quot;source&quot;);&#xa;&#x9;feedurl.setValue(path);&#xa;&#x9;source.setValue(&quot;uvideo:&quot;+path);&#xa;&#x9;CQ.salesforce.restAPI1.connect(dialog); &#xa;}&#xa;"/>
+                                        click="function(comp, evt , record, path) {&#xa;    var str=document.URL;&#xa;  var rootLoc=window.location.origin;&#xa;  var test=str.replace(&quot;rootLoc&quot;,&quot;&quot;);&#xa;    var a=test.split(&quot;.&quot;);&#xa;    var path=a[0]+&quot;/jcr:content&quot;;&#xa;    var dialog = comp.findParentByType('dialog'); &#xa;    var feedurl = dialog.findById(&quot;Url&quot;);&#xa;&#x9;var source = dialog.findById(&quot;source&quot;);&#xa;&#x9;feedurl.setValue(path);&#xa;&#x9;source.setValue(&quot;uvideo:&quot;+path);&#xa;&#x9;CQ.salesforce.restAPI1.connect(dialog); &#xa;}&#xa;"/>
                                 </connectbutton>
                             </items>
                         </btnpanel>
